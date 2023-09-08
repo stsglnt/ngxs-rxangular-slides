@@ -40,7 +40,7 @@ transition: fade-out
 ---
 
 <h2>  Selector optimization ! </h2>
-<span style="font-size: 10px; color: rgb(177 171 171)">this is the most performance crucial</span>
+<span style="font-size: 10px; color: rgb(177 171 171)">this is the most crucial thing for performance</span>
 
 <hr>
 
@@ -232,9 +232,6 @@ transition: fade-out
 </li>
 <li v-click>
 It is not recommended to store class instances instead of literal objects in a store. (We are using class-transfomer so I don't see how we can follow this recommendation. It might be a problem in case we decide to use some sort of caching. It often requires some serialization/deserialization which is problematic with class instances)
-</li>
-<li v-click>
- Namespace actions so it's easier to see where are they coming from.
 </li>
 <li v-click>
 Use  { cancelUncompleted: true } so prev actions is canceled
